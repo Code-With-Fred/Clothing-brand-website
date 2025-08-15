@@ -66,15 +66,17 @@ const Hero: React.FC = () => {
               </Button>
             </Link>
 
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 px-8 py-4 text-lg"
-            >
-              <motion.span whileHover={{ scale: 1.05 }}>
-                Our Story
-              </motion.span>
-            </Button>
+            <Link to="/story">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 px-8 py-4 text-lg"
+              >
+                <motion.span whileHover={{ scale: 1.05 }}>
+                  Our Story
+                </motion.span>
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Floating Elements */}
