@@ -9,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const ProductDetail = () => {
   const { id } = useParams<{ id: string }>();
@@ -273,6 +274,7 @@ const ProductDetail = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

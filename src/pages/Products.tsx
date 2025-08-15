@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useQuery } from '@tanstack/react-query';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import ProductGrid from '@/components/ProductGrid';
 import CategoryFilter from '@/components/CategoryFilter';
 import { productAPI } from '@/services/api';
@@ -98,6 +99,7 @@ const Products = () => {
           />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

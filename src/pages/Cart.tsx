@@ -6,6 +6,7 @@ import { useCart } from '@/contexts/CartContext';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const Cart = () => {
   const { items, total, itemCount, updateQuantity, removeItem, clearCart } = useCart();
@@ -242,6 +243,7 @@ const Cart = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

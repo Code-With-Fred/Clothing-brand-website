@@ -10,6 +10,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const Checkout = () => {
   const { items, total, itemCount, clearCart } = useCart();
@@ -430,6 +431,7 @@ const Checkout = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
